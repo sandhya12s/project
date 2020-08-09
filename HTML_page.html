@@ -1,0 +1,148 @@
+<html>
+<head>
+<body>
+<title> Testing HTML Pages</title>
+<p>&#128515Home&#160;&#160;|Info&#160;&#160;|Contact&#160;&#160;|</p>
+<div>
+    Name:&#160;&#160;&#160;<input id="Na" maxlength="20"type="text" required="true" id="a" oninput="myfun()">
+&#160;&#160;&#160;&#160;&#160;Phone No.:<input type="text" pattern=""[0-9]{10} placeholder="9834438321"><br><br>
+    Roll No.:<input id="Ro"type="text"required>
+Gender: Female <input type="radio">
+         male <input type="radio"> <br><br>
+    Class:&#160;&#160;&#160; <input id="cl" type="number" min="1"" max="12"">
+Section: <select>
+           <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select><br><br>
+Email: <input type="email" pattern="[A-Z-a-z-0-9-@]"><br><br>
+  </div>
+<form>
+<legend>Subjects Expert</legend>
+<fieldset>
+   Subject1: <select id="sub" size="1" required>
+     <option value="Physics">Physics</option>
+      <option value="Maths">Maths</option>
+      <option value="chemistry">Chemistry</option>
+       <option value="Biology">Biology</option>
+        <option value="cs">Computer Science</option>
+</select>
+&#160;&#160;&#160;&#160;  Subject2: <select id="sub2" size="1" required>
+   <option value="Physics">Physics</option>
+   <option value="Maths">Maths</option>
+   <option value="chemistry">Chemistry</option>
+   <option value="Biology">Biology</option>
+   <option value="cs">Computer Science</option></select>
+&#160;&#160;&#160;&#160;         Subject3: <select id="sub3" size="1" required>
+         <option value="Physics">Physics</option>
+          <option value="Maths">Maths</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="Biology">Biology</option>
+            <option value="cs">Computer Science</option></select><br><br><br><br>
+    Subject4: <select id="sub4" size="1" required>
+         <option value="Physics">Physics</option>
+         <option value="Maths">Maths</option>
+          <option value="chemistry">Chemistry</option>
+           <option value="Biology">Biology</option>
+              <option value="cs">Computer Science</option></select>
+
+&#160;&#160;&#160;&#160;Subject5: <select id="sub5" size="1" required>
+<option value="Physics">Physics</option>
+<option value="Maths">Maths</option>
+<option value="chemistry">Chemistry</option>
+<option value="Biology">Biology</option>
+<option value="cs">Computer Science</option></select>
+</fieldset>
+</form>
+<form>
+<fieldset>
+<legend>Documents Submitted</legend>
+10th Marksheet: <input type="checkbox" required>
+&#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160;Fee Reciept: <input type="checkbox" required><br><br>
+Tuition Fee Reciept: <input type="checkbox">
+&#160;&#160;&#160;&#160;&#160;Transfer certificate:<input type="checkbox"required>
+</fieldset>
+</form>
+ 
+
+Mrksheet of 10th<br><br>
+<table>
+
+ <tr>
+<th>Sr.No<th>
+<th>Subject Name<th>
+<th>Marks</th>
+<th>Subject Code</th>
+</tr>
+
+ <tr>
+  <td>1</td>
+   <td>Maths</td>
+    <td>100</td>
+   <td>001</td>
+</tr>
+  
+   <tr>
+   <td>2</td>
+   <td>Social Studies</td>
+  <td>100</td>
+  <td>002</td>
+  </tr>
+
+  <tr>
+  <td>3</td>
+  <td>English</td>
+  <td>100</td>
+  <td>003</td>
+</tr>
+
+<tr>
+ <td>4</td>
+ <td>Science</td>
+ <td>100</td>
+ <td>004</td>
+</tr>
+
+<tr>
+  <td>5</td>
+ <td>Hindi</td>
+ <td>100</td>
+ <td>005</td>
+</tr>  
+</table>
+
+<fieldset>
+<legend>Performance</legend>
+Performance:&#160;&#160;&#160;&#160;<input type="range" min="1" max="10" id="pe"required>&#160;&#160;&#160;&#160;&#160;&#160;
+Behaviour:&#160;&#160;&#160;&#160; <input type="range" min="1" max="10" id="be" required><br><br>
+Sports:&#160;&#160;&#160;&#160; <input type="range" min="1" max="10" id="sp" required>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+Overall Performance:&#160;&#160;&#160;&#160; <input type="range" min="1" max="10" id="ov" required><br><br><br>
+Comment:&#160 <textarea col="2" row="4"></textarea>
+
+</fieldset><br><br>
+
+
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+
+var t = document.getElementById("a").value;
+alert(t);
+function myfun(){
+var pat = /[a-z]/g;
+var b = t.match(pat);
+if(b == null){
+alert("please enter only the alphabets");
+}
+
+}
+</script
+</body>
+</head>
+</html>
